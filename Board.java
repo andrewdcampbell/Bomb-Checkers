@@ -36,7 +36,7 @@ public class Board {
             for (int j = 0; j < N; j++) {
                 if (b.selected != null && b.pieces[i][j] == b.selected) StdDrawPlus.setPenColor(StdDrawPlus.WHITE);
                 else if ((i + j) % 2 == 0) StdDrawPlus.setPenColor(StdDrawPlus.GRAY);
-                else                       StdDrawPlus.setPenColor(StdDrawPlus.RED);
+                else                       StdDrawPlus.setPenColor(StdDrawPlus.BLUE);
                 StdDrawPlus.filledSquare(i + .5, j + .5, .5);
                 // Selects correct image to draw on top of square
                 if (b.pieces[i][j] != null) { 
